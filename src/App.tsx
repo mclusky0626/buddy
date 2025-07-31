@@ -7,13 +7,14 @@ import Bot from './pages/Bot';
 import Scenarios from './pages/Scenarios';
 import Vision from './pages/Vision';
 import Contributors from './pages/Contributors';
-import './App.css';
 
-function App() {
+const App = () => {
   return (
     <>
+      {/* The Navbar will be visible on all pages */}
       <Navbar />
       <main>
+        {/* Routes will render the component that matches the current URL path */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/system" element={<System />} />
@@ -22,10 +23,11 @@ function App() {
           <Route path="/vision" element={<Vision />} />
           <Route path="/contributors" element={<Contributors />} />
         </Routes>
-        <Footer />
       </main>
+      {/* The Footer will be visible on all pages */}
+      <Footer />
     </>
-  )
-}
+  );
+};
 
 export default App

@@ -12,7 +12,7 @@ function Contributors() {
           </div>
           {/* 팀 사진과 설명 */}
           <div className="bg-white p-6 rounded-xl shadow-lg">
-            <div className="w-full h-48 bg-gray-200 rounded-lg mb-4 flex items-center justify-center text-slate-400">팀사진</div>
+            <div className="w-full h-48 bg-gray-200 rounded-lg mb-4 flex items-center justify-center text-slate-400"><img src="" alt="" /></div>
             <h4 className="text-xl font-bold mb-2">팀</h4>
             {/* 팀 설명을 여기에 작성 */}
           </div>
