@@ -6,6 +6,7 @@ import System from './pages/System';
 import Bot from './pages/Bot';
 import Scenarios from './pages/Scenarios';
 import Vision from './pages/Vision';
+import Contributors from './pages/Contributors';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/bot" element={<Bot />} />
           <Route path="/scenarios" element={<Scenarios />} />
           <Route path="/vision" element={<Vision />} />
+          <Route path="/contributors" element={<Contributors />} />
         </Routes>
         <Footer />
       </main>

@@ -24,7 +24,7 @@ const details = {
 function System() {
   const [current, setCurrent] = useState<string | null>(null);
   return (
-    <section className="py-20">
+    <section className="py-20" id="system">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h3 className="text-3xl md:text-4xl font-bold text-slate-800">시스템 핵심 개념</h3>
