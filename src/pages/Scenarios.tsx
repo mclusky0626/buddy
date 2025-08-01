@@ -3,7 +3,7 @@ import { useState } from 'react';
 function Scenarios() {
   const [tab, setTab] = useState<'incheon' | 'tashkent'>('incheon');
   return (
-    <section className="py-20" id="scenarios">
+    <section className="py-20" id="scenarios"> {/* Resolved: Kept the 'id="scenarios"' as it was present in the first version and useful for direct linking within a single-page context. If routing is being fully implemented, this ID might be moved to a parent container if Scenarios becomes a full page. */}
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h3 className="text-3xl md:text-4xl font-bold text-slate-800">적용 시나리오</h3>
