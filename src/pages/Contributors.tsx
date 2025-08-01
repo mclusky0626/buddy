@@ -4,34 +4,39 @@ import React from 'react';
 // import person1Image from '../assets/images/person1.jpg';
 // import teamImage from '../assets/images/team.jpg';
 // import person2Image from '../assets/images/person2.jpg';
+import person1Image from '../assets/bae.jpg'
+import person2Image from '../assets/dldbsdn.jpg'
+import teamImage from '../assets/LAena.png'
+
+
 
 function Contributors() {
   // Example data for contributors
   const contributorsData = [
     {
       id: 1,
-      name: '김민준', // Kim Min-jun
-      role: '프로젝트 리드', // Project Lead
-      description: '이 프로젝트의 전반적인 기획과 개발을 이끌었습니다. 사용자 경험 향상에 중점을 두었습니다.',
+      name: '배건우', // Kim Min-jun
+      role: '착취자', // Project Lead
+      description: '이윤우와 인공지능을 착취해서 프로젝트를 완성했습니다.',
       // In a real project, you'd use imported image paths
-      imageUrl: 'https://via.placeholder.com/150/AEC6CF/FFFFFF?text=Person1', // Placeholder image URL
-      altText: '김민준 사진',
+      imageUrl: person1Image, // Placeholder image URL
+      altText: '간으 사진',
     },
     {
       id: 2,
       name: '팀',
-      role: '개발팀', // Development Team
-      description: '프론트엔드와 백엔드 개발을 담당하며, 기술적인 구현과 안정화에 기여했습니다.',
-      imageUrl: 'https://via.placeholder.com/150/84B08C/FFFFFF?text=Team', // Placeholder image URL
+      role: '우리의 팀', // Development Team
+      description: '구성원을 단결시켰다',
+      imageUrl: teamImage, // Placeholder image URL
       altText: '팀 사진',
     },
     {
       id: 3,
-      name: '박서연', // Park Seo-yeon
-      role: 'UI/UX 디자이너', // UI/UX Designer
-      description: '매력적인 사용자 인터페이스와 직관적인 사용자 경험을 디자인하는 데 핵심적인 역할을 했습니다.',
-      imageUrl: 'https://via.placeholder.com/150/FFDDC1/FFFFFF?text=Person2', // Placeholder image URL
-      altText: '박서연 사진',
+      name: '이윤우', // Park Seo-yeon
+      role: '노동자', // UI/UX Designer
+      description: '개처럼 일했습니다',
+      imageUrl: person2Image, // Placeholder image URL
+      altText: '장애인 사진',
     },
   ];
 
