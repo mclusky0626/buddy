@@ -2,13 +2,15 @@ import { useEffect, useRef } from 'react';
 
 function Vision() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const chartRef = useRef<any>(null);
 
   useEffect(() => {
     if (canvasRef.current) {
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore - Chart is loaded from CDN
       const Chart = window.Chart;
-      new Chart(canvasRef.current.getContext('2d'), {
+      chartRef.current = new Chart(canvasRef.current.getContext('2d'), {
         type: 'bar',
         data: {
           labels: ['인명/재산 피해 최소화', '도시 회복탄력성 극대화', '성공적 국제 협력 모델'],
@@ -47,6 +49,13 @@ function Vision() {
         }
       });
     }
+
+    return () => {
+      if (chartRef.current) {
+        chartRef.current.destroy();
+        chartRef.current = null;
+      }
+    };
   }, []);
 
   return (
