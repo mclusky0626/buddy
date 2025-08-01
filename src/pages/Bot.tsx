@@ -19,7 +19,7 @@ function Bot() {
   };
 
   return (
-    <section className="py-20 bg-slate-100">
+    <section className="py-20 bg-slate-100" id="bot">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h3 className="text-3xl md:text-4xl font-bold text-slate-800">텔레그램 봇: 스마트 재난 소통의 중심</h3>
