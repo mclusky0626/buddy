@@ -3,7 +3,7 @@ import { useState } from 'react';
 function Scenarios() {
   const [tab, setTab] = useState<'incheon' | 'tashkent'>('incheon');
   return (
-    <section className="py-20" id="scenarios">
+    <section className="py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h3 className="text-3xl md:text-4xl font-bold text-slate-800">적용 시나리오</h3>

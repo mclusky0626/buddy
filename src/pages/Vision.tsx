@@ -50,7 +50,7 @@ function Vision() {
   }, []);
 
   return (
-    <section className="py-20 bg-white" id="vision">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h3 className="text-3xl md:text-4xl font-bold text-slate-800">기대 효과 및 향후 계획</h3>
